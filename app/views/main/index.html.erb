@@ -1,0 +1,9 @@
+<h1>TJ's Sweet as hell website</h1>
+
+<% if user_signed_in? %>
+
+Hi! <%= current_user.email %>
+
+<% else %>
+    <%= link_to "Sign up", new_registration_path(:user) %><br />
+<% end %>
